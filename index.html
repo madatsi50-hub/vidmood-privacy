@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de Confidentialité — VidMood</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a0533 0%, #0d1b4b 100%);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .logo-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #FF2D55, #8B5CF6);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+    }
+
+    .logo-text {
+      text-align: left;
+    }
+
+    .logo-text h1 {
+      font-size: 26px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #FF2D55, #8B5CF6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .logo-text span {
+      font-size: 12px;
+      color: #94a3b8;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,45,85,0.12);
+      border: 1px solid rgba(255,45,85,0.3);
+      color: #FF2D55;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    /* ── Table des matières ── */
+    .toc {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .toc h3 {
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: #8B5CF6;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .toc a:hover { color: #FF2D55; }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 48px;
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, #FF2D55, #8B5CF6);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    p { color: #cbd5e1; font-size: 15px; margin-bottom: 14px; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      color: #cbd5e1;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    strong { color: #fff; }
+
+    /* ── Cards ── */
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 14px;
+    }
+
+    .card-title {
+      font-weight: 700;
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card p { margin: 0; font-size: 13px; }
+
+    /* ── Data table ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    th {
+      background: #1a2235;
+      color: #8B5CF6;
+      font-weight: 700;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    th:first-child { border-radius: 10px 0 0 0; }
+    th:last-child  { border-radius: 0 10px 0 0; }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #1e293b;
+      color: #cbd5e1;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(139,92,246,0.05); }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: rgba(139,92,246,0.08);
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+
+    .highlight.warning {
+      background: rgba(245,158,11,0.07);
+      border-color: rgba(245,158,11,0.25);
+    }
+
+    .highlight.danger {
+      background: rgba(239,68,68,0.07);
+      border-color: rgba(239,68,68,0.25);
+    }
+
+    .highlight p { margin: 0; font-size: 14px; }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: linear-gradient(135deg, rgba(255,45,85,0.1), rgba(139,92,246,0.1));
+      border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      background: linear-gradient(135deg, #FF2D55, #8B5CF6);
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-box a:hover { opacity: 0.85; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #475569;
+      font-size: 13px;
+      border-top: 1px solid #1e293b;
+    }
+
+    footer span {
+      background: linear-gradient(135deg, #FF2D55, #8B5CF6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      h2 { font-size: 17px; }
+      table { font-size: 12px; }
+      th, td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">🎬</div>
+    <div class="logo-text">
+      <h1>VidMood</h1>
+      <span>PLATEFORME VIDÉO SOCIALE</span>
+    </div>
+  </div>
+  <p>Politique de Confidentialité &amp; Protection des données personnelles</p>
+  <div class="badge">Dernière mise à jour : Juin 2026</div>
+</header>
+
+<!-- Content -->
+<div class="container">
+
+  <!-- Intro -->
+  <div class="highlight" style="margin-bottom:32px;">
+    <p>
+      Chez <strong>VidMood</strong>, nous prenons la confidentialité de vos données très au sérieux.
+      Cette politique explique quelles données nous collectons, pourquoi, et comment vous pouvez les contrôler.
+      En utilisant VidMood, vous acceptez les pratiques décrites dans ce document.
+    </p>
+  </div>
+
+  <!-- Table des matières -->
+  <div class="toc">
+    <h3>Sommaire</h3>
+    <ol>
+      <li><a href="#s1">Qui sommes-nous</a></li>
+      <li><a href="#s2">Données collectées</a></li>
+      <li><a href="#s3">Utilisation des données</a></li>
+      <li><a href="#s4">Partage avec des tiers</a></li>
+      <li><a href="#s5">Publicités (AdMob)</a></li>
+      <li><a href="#s6">Paiements (Stripe)</a></li>
+      <li><a href="#s7">Sécurité</a></li>
+      <li><a href="#s8">Conservation des données</a></li>
+      <li><a href="#s9">Vos droits</a></li>
+      <li><a href="#s10">Mineurs</a></li>
+      <li><a href="#s11">Modifications</a></li>
+      <li><a href="#s12">Contact</a></li>
+    </ol>
+  </div>
+
+  <!-- Section 1 -->
+  <section id="s1">
+    <h2><span class="num">1</span> Qui sommes-nous</h2>
+    <p>
+      <strong>VidMood</strong> est une application mobile de partage de vidéos courtes permettant aux utilisateurs
+      de créer, partager et découvrir du contenu vidéo. L'application est éditée et gérée par
+      <strong>VidMood</strong> (contact : madatsi50@gmail.com).
+    </p>
+    <p>
+      Nous agissons en tant que <strong>responsable du traitement</strong> des données personnelles
+      collectées via notre application Android (disponible sur Google Play Store).
+    </p>
+  </section>
+
+  <!-- Section 2 -->
+  <section id="s2">
+    <h2><span class="num">2</span> Données collectées</h2>
+    <p>Nous collectons les catégories de données suivantes :</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Catégorie</th>
+          <th>Données</th>
+          <th>Obligatoire</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Compte</strong></td>
+          <td>Adresse email, mot de passe (chiffré), nom d'utilisateur</td>
+          <td>✅ Oui</td>
+        </tr>
+        <tr>
+          <td><strong>Profil</strong></td>
+          <td>Photo de profil, biographie, liens réseaux sociaux</td>
+          <td>❌ Non</td>
+        </tr>
+        <tr>
+          <td><strong>Contenu</strong></td>
+          <td>Vidéos publiées, commentaires, likes, partages</td>
+          <td>❌ Non</td>
+        </tr>
+        <tr>
+          <td><strong>Communications</strong></td>
+          <td>Messages privés entre utilisateurs</td>
+          <td>❌ Non</td>
+        </tr>
+        <tr>
+          <td><strong>Transactions</strong></td>
+          <td>Historique d'achats de coins, cadeaux envoyés/reçus</td>
+          <td>❌ Non</td>
+        </tr>
+        <tr>
+          <td><strong>Utilisation</strong></td>
+          <td>Vidéos regardées, durée de session, interactions</td>
+          <td>✅ Oui (anonymisé)</td>
+        </tr>
+        <tr>
+          <td><strong>Appareil</strong></td>
+          <td>Modèle, OS, langue, identifiant publicitaire (via AdMob)</td>
+          <td>✅ Oui (AdMob)</td>
+        </tr>
+        <tr>
+          <td><strong>Localisation</strong></td>
+          <td>Pays (pour le ciblage publicitaire uniquement)</td>
+          <td>❌ Non</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight warning">
+      <p>
+        ⚠️ <strong>Nous ne collectons jamais</strong> : numéro de téléphone, adresse postale,
+        données biométriques, contacts de votre téléphone, historique de navigation externe.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section id="s3">
+    <h2><span class="num">3</span> Utilisation des données</h2>
+    <p>Vos données sont utilisées pour :</p>
+
+    <div class="card">
+      <div class="card-title">🔐 Fonctionnement du service</div>
+      <p>Créer et gérer votre compte, afficher votre profil, permettre la publication de vidéos et les interactions sociales.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">🎯 Personnalisation</div>
+      <p>Adapter le fil d'actualités et les recommandations de contenu selon vos préférences et interactions.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">📢 Publicité</div>
+      <p>Afficher des publicités pertinentes via Google AdMob. Vous pouvez refuser la personnalisation dans les paramètres de votre appareil.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">🛡️ Sécurité et modération</div>
+      <p>Détecter et prévenir les abus, le spam, les contenus illicites et protéger la communauté.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">📊 Amélioration du service</div>
+      <p>Analyser les performances de l'application et corriger les bugs (via Sentry, données anonymisées).</p>
+    </div>
+    <div class="card">
+      <div class="card-title">📩 Communications</div>
+      <p>Vous envoyer des notifications push concernant votre activité (mentions, likes, nouveaux abonnés). Vous pouvez les désactiver à tout moment.</p>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section id="s4">
+    <h2><span class="num">4</span> Partage avec des tiers</h2>
+    <p>Nous utilisons les services tiers suivants, chacun avec sa propre politique de confidentialité :</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Rôle</th>
+          <th>Données partagées</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Supabase</strong></td>
+          <td>Base de données &amp; authentification</td>
+          <td>Toutes les données utilisateur</td>
+        </tr>
+        <tr>
+          <td><strong>Google AdMob</strong></td>
+          <td>Publicités in-app</td>
+          <td>Identifiant publicitaire, pays, interactions pubs</td>
+        </tr>
+        <tr>
+          <td><strong>Firebase (Google)</strong></td>
+          <td>Notifications push</td>
+          <td>Token appareil, langue</td>
+        </tr>
+        <tr>
+          <td><strong>Stripe</strong></td>
+          <td>Paiements sécurisés</td>
+          <td>Informations de paiement (jamais stockées chez nous)</td>
+        </tr>
+        <tr>
+          <td><strong>LiveKit</strong></td>
+          <td>Streaming live video</td>
+          <td>Flux audio/vidéo pendant les lives uniquement</td>
+        </tr>
+        <tr>
+          <td><strong>Sentry</strong></td>
+          <td>Monitoring des erreurs</td>
+          <td>Logs d'erreurs anonymisés</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight danger">
+      <p>
+        🚫 <strong>Nous ne vendons jamais vos données</strong> à des tiers à des fins commerciales.
+        Aucun partage avec des courtiers en données ou des annonceurs tiers en dehors de Google AdMob.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section id="s5">
+    <h2><span class="num">5</span> Publicités (Google AdMob)</h2>
+    <p>
+      VidMood utilise <strong>Google AdMob</strong> pour afficher des publicités dans l'application :
+      bannières dans le fil vidéo, publicités interstitielles entre les sessions,
+      et publicités récompensées (vous gagnez des coins en les regardant).
+    </p>
+    <p>
+      Google AdMob peut utiliser votre <strong>identifiant publicitaire</strong> (GAID sur Android)
+      pour personnaliser les publicités selon vos centres d'intérêt.
+    </p>
+    <p><strong>Comment refuser la personnalisation :</strong></p>
+    <ul>
+      <li>Android : Paramètres → Google → Publicités → Refuser la personnalisation</li>
+      <li>Ou réinitialisez votre identifiant publicitaire dans les mêmes paramètres</li>
+    </ul>
+    <p>
+      Pour en savoir plus :
+      <a href="https://policies.google.com/privacy" target="_blank" style="color:#8B5CF6;">
+        Politique de confidentialité Google
+      </a>
+    </p>
+  </section>
+
+  <!-- Section 6 -->
+  <section id="s6">
+    <h2><span class="num">6</span> Paiements (Stripe)</h2>
+    <p>
+      Les transactions financières (achat de VidCoins, abonnements) sont traitées par
+      <strong>Stripe Inc.</strong>, un prestataire de paiement certifié PCI-DSS.
+    </p>
+    <div class="highlight warning">
+      <p>
+        💳 <strong>VidMood ne stocke jamais</strong> vos numéros de carte bancaire, CVV ou
+        données de paiement sensibles. Ces informations sont gérées exclusivement par Stripe.
+      </p>
+    </div>
+    <p>
+      Politique de confidentialité Stripe :
+      <a href="https://stripe.com/privacy" target="_blank" style="color:#8B5CF6;">stripe.com/privacy</a>
+    </p>
+  </section>
+
+  <!-- Section 7 -->
+  <section id="s7">
+    <h2><span class="num">7</span> Sécurité des données</h2>
+    <p>Nous mettons en œuvre les mesures de sécurité suivantes :</p>
+    <ul>
+      <li>✅ <strong>Chiffrement HTTPS/TLS</strong> pour toutes les communications</li>
+      <li>✅ <strong>Chiffrement des mots de passe</strong> (bcrypt, jamais stockés en clair)</li>
+      <li>✅ <strong>Row Level Security (RLS)</strong> — chaque utilisateur n'accède qu'à ses propres données</li>
+      <li>✅ <strong>Authentification sécurisée</strong> via JWT avec expiration courte</li>
+      <li>✅ <strong>Limitation de débit</strong> sur les tentatives de connexion</li>
+      <li>✅ <strong>Audit des transactions</strong> de coins pour détecter les abus</li>
+      <li>✅ <strong>Infrastructure sécurisée</strong> hébergée sur Supabase (SOC 2 Type II certifié)</li>
+    </ul>
+  </section>
+
+  <!-- Section 8 -->
+  <section id="s8">
+    <h2><span class="num">8</span> Conservation des données</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Type de données</th>
+          <th>Durée de conservation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Données de compte</td>
+          <td>Jusqu'à suppression du compte</td>
+        </tr>
+        <tr>
+          <td>Vidéos publiées</td>
+          <td>Jusqu'à suppression par l'utilisateur ou la modération</td>
+        </tr>
+        <tr>
+          <td>Messages privés</td>
+          <td>30 jours après suppression de la conversation</td>
+        </tr>
+        <tr>
+          <td>Logs d'erreurs (Sentry)</td>
+          <td>30 jours (automatique)</td>
+        </tr>
+        <tr>
+          <td>Données publicitaires (AdMob)</td>
+          <td>Selon la politique Google (jusqu'à 540 jours)</td>
+        </tr>
+        <tr>
+          <td>Historique de transactions</td>
+          <td>5 ans (obligation légale)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      En cas de <strong>suppression de compte</strong>, toutes vos données personnelles sont
+      supprimées dans un délai de <strong>30 jours</strong>, sauf obligation légale de conservation.
+    </p>
+  </section>
+
+  <!-- Section 9 -->
+  <section id="s9">
+    <h2><span class="num">9</span> Vos droits (RGPD)</h2>
+    <p>
+      Si vous résidez dans l'<strong>Union Européenne</strong> ou en <strong>France</strong>,
+      vous bénéficiez des droits suivants sur vos données personnelles :
+    </p>
+    <div class="card">
+      <div class="card-title">📋 Droit d'accès</div>
+      <p>Obtenir une copie de toutes les données que nous détenons sur vous.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">✏️ Droit de rectification</div>
+      <p>Corriger des informations inexactes dans votre profil directement depuis les paramètres.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">🗑️ Droit à l'effacement ("droit à l'oubli")</div>
+      <p>Demander la suppression complète de votre compte et de vos données.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">📦 Droit à la portabilité</div>
+      <p>Recevoir vos données dans un format structuré et lisible (JSON/CSV).</p>
+    </div>
+    <div class="card">
+      <div class="card-title">🚫 Droit d'opposition</div>
+      <p>Vous opposer au traitement de vos données à des fins publicitaires.</p>
+    </div>
+    <p style="margin-top:16px;">
+      Pour exercer vos droits, contactez-nous à :
+      <a href="mailto:madatsi50@gmail.com" style="color:#8B5CF6;">madatsi50@gmail.com</a><br>
+      Nous répondons dans un délai de <strong>30 jours maximum</strong>.
+    </p>
+  </section>
+
+  <!-- Section 10 -->
+  <section id="s10">
+    <h2><span class="num">10</span> Protection des mineurs</h2>
+    <div class="highlight danger">
+      <p>
+        🔞 <strong>VidMood est réservé aux utilisateurs de 13 ans et plus.</strong><br><br>
+        Nous ne collectons pas sciemment de données personnelles concernant des enfants de moins de 13 ans.
+        Si vous pensez qu'un enfant de moins de 13 ans a créé un compte, contactez-nous immédiatement
+        à <a href="mailto:madatsi50@gmail.com" style="color:#FF2D55;">madatsi50@gmail.com</a>
+        et nous supprimerons ce compte dans les 48 heures.
+      </p>
+    </div>
+    <p>
+      Pour les utilisateurs de 13 à 17 ans, nous recommandons l'accord parental.
+      Certaines fonctionnalités (paiements, lives) peuvent être limitées selon l'âge.
+    </p>
+  </section>
+
+  <!-- Section 11 -->
+  <section id="s11">
+    <h2><span class="num">11</span> Modifications de cette politique</h2>
+    <p>
+      Nous pouvons mettre à jour cette politique de confidentialité à tout moment.
+      En cas de modification significative, nous vous en informerons par :
+    </p>
+    <ul>
+      <li>Une notification push dans l'application</li>
+      <li>Un email à l'adresse associée à votre compte</li>
+      <li>Un bandeau visible lors de votre prochaine connexion</li>
+    </ul>
+    <p>
+      La date de "Dernière mise à jour" en haut de cette page indique quand la politique
+      a été modifiée pour la dernière fois. L'utilisation continue de VidMood après
+      modification vaut acceptation de la nouvelle politique.
+    </p>
+  </section>
+
+  <!-- Section 12 -->
+  <section id="s12">
+    <h2><span class="num">12</span> Nous contacter</h2>
+    <div class="contact-box">
+      <h3>Une question sur vos données ?</h3>
+      <p>Notre équipe répond à toutes vos questions dans un délai de 30 jours.</p>
+      <a href="mailto:madatsi50@gmail.com">📩 madatsi50@gmail.com</a>
+    </div>
+    <p style="margin-top:20px; text-align:center; color:#475569; font-size:13px;">
+      VidMood — Application mobile de partage vidéo<br>
+      Toute réclamation peut également être adressée à la
+      <a href="https://www.cnil.fr" target="_blank" style="color:#8B5CF6;">CNIL</a>
+      (Commission Nationale de l'Informatique et des Libertés) en France.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 <span>VidMood</span>. Tous droits réservés.
+  &nbsp;·&nbsp;
+  <a href="#" style="color:#475569; text-decoration:none;">Politique de confidentialité</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:madatsi50@gmail.com" style="color:#475569; text-decoration:none;">Contact</a>
+</footer>
+
+</body>
+</html>
